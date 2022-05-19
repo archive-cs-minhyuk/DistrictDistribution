@@ -9,6 +9,7 @@ Pytorch Implementation of Distributing internal economic level of districts usin
 
 ### Step 1. Measuring hyperlocal score
 <hr/>
+
 Calculating hyperlocal scores using ordinal regression model
 ```
 usage: 1-Calculating hyperlocal scores.py [-h] [--model MODEL] [--thr1 THR1] [--thr2 THR2]
