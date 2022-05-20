@@ -26,6 +26,26 @@ python3 1-Calculating hyperlocal scores.py --model ./model/proxy_ordinal.ckpt --
 ### Step 2-A. Extracting Core points
 <hr/>
 
+Extracting core points of districts using gradient descent
+```
+usage: 2-voronoi_core_shell.py
+```  
+Basically, running the above code will do all the works for you by surfing all the major/minor districts in Korea(under the assumption you have preliminary files. For preliminary files, check the code for detailed understandings). But in case you want to extract core points of a single district, you can use the below code for that.
+
+Extracting core points of **single** district
+```
+usage: 2-(sub)-extract_core.py [-h] [--zl ZOOM LEVEL] [--adm1 PROVINCE] [--adm2 CITY]
+                                          [--dir PATH FOR OUTPUT] 
+```  
+
+
+**Extracting core points Example**
+```
+python3 2-(sub)-extract_core.py --zl 15 --adm1 Chungbuk --adm2 Chungju-si --dir voronoi_result/
+```
+
+
+
 ### Step 2-B. Performing Voronoi split
 <hr/>
 
