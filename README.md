@@ -20,7 +20,7 @@ usage: 1-Calculating hyperlocal scores.py [-h] [--model MODEL] [--thr1 THR1] [--
 
 **Measuring hyperlocal score Example**
 ```
-python3 2-data_eval.py --model ./model/proxy_ordinal.ckpt --csv_name zl15_32645_score_AAXXYY.csv
+python3 1-Calculating hyperlocal scores.py --model ./model/proxy_ordinal.ckpt --csv_name zl15_32645_score_AAXXYY.csv
 ```
 
 ### Step 2-A. Extracting Core points
