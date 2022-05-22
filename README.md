@@ -2,6 +2,8 @@
 
 Pytorch Implementation of Distributing internal economic level of districts using satellite imagery and power-laws for cities
 
+<img src="fig/voronoi.png" alt="voronoi" width="500"/>
+
   * Our model consists of 3 parts, which are introduced below.
   * Step 1. We measure the hyperlocal economic scores of each grids by inferring the relative degree of individual grid image's economic development via ordinal regression.
   * Step 2. We get the core points of the districts using gradient descent, and make Voronoi cells using the points.
