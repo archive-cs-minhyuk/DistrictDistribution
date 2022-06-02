@@ -91,4 +91,9 @@ python3 4-result_prediction_minor.py --adm1 Chungbuk --adm2 Chungju-si --dir Alp
 ```
 
 ## Results
-<hr/>
+
+Results for alpha values of major/minor 
+<img src="fig/alpha.PNG" alt="voronoi" width="400"/>
+
+Results for spearman correlation coefficients
+<img src="fig/spearman.PNG" alt="voronoi" width="400"/>
