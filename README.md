@@ -89,3 +89,6 @@ usage: 4-result_prediction_minor.py [-h] [--adm1 PROVINCE] [--adm2 CITY] [--dir 
 ```
 python3 4-result_prediction_minor.py --adm1 Chungbuk --adm2 Chungju-si --dir Alphas_major/ --pop 212000 
 ```
+
+### Results
+<hr/>
