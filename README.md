@@ -53,3 +53,17 @@ python3 2-(sub)-extract_core.py --zl 15 --adm1 Chungbuk --adm2 Chungju-si --dir 
 
 ### Step 3. Distributing economic statistics to sub-regions
 <hr/>
+
+Note that above procedures are completely **optional**. Above procedures explain how we got the core points/alpha values we used for actual predictions, using the ground-truth population dataset. But we provided you these result datasets(hyperlocal score, core points, alpha values...) in the 'Data' directory so if you want only the prediction result, its completely fine for you to just run the below.
+
+for major cities
+```
+usage: 4-result_prediction_major.py [-h] [--adm1 CITY] [--dir PATH FOR OUTPUT] 
+                                    [--pop GROUND-TRUTH POPULATION]
+``` 
+
+for minor cities
+```
+usage: 4-result_prediction_minor.py [-h] [--adm1 PROVINCE] [--adm2 CITY] [--dir PATH FOR OUTPUT] 
+                                    [--pop GROUND-TRUTH POPULATION]
+``` 
