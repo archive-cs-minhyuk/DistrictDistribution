@@ -48,8 +48,25 @@ python3 2-(sub)-extract_core.py --zl 15 --adm1 Chungbuk --adm2 Chungju-si --dir 
 
 
 
-### Step 2-B. Performing Voronoi split
+### Step 2-B. Performing Voronoi split + Calculating alpha values
 <hr/>
+
+This part of the code includes not only performing voronoi split of district with core points we got as a criteria, but also calculating alpha values of the fitted distribution models. The result csv file will give us informations about alpha values for 4 different fits, which used 'log-transformation' or 'MSE splitting'(for detailed informations, refer to our paper). The main alpha value we used for step 3 is the 'log_after' value. 
+
+for major cities
+```
+usage: 3-voronoi_major.py [-h] [--adm1 CITY] [--dir PATH FOR OUTPUT] 
+``` 
+
+for minor cities
+```
+usage: 3-voronoi_minor.py [-h] [--adm1 PROVINCE] [--adm2 CITY] [--dir PATH FOR OUTPUT] 
+```
+
+**Voronoi split + calculating alpha Example**
+```
+python3 3-voronoi_minor.py --adm1 Chungbuk --adm2 Chungju-si --dir Alphas_major/
+```
 
 ### Step 3. Distributing economic statistics to sub-regions
 <hr/>
@@ -67,3 +84,8 @@ for minor cities
 usage: 4-result_prediction_minor.py [-h] [--adm1 PROVINCE] [--adm2 CITY] [--dir PATH FOR OUTPUT] 
                                     [--pop GROUND-TRUTH POPULATION]
 ``` 
+
+**Distributing economic statistics Example**
+```
+python3 4-result_prediction_minor.py --adm1 Chungbuk --adm2 Chungju-si --dir Alphas_major/ --pop 212000 
+```
